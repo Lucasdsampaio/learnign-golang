@@ -3,17 +3,16 @@ package main
 import "fmt"
 
 func main() {
-	favSport := ""
-	switch favSport {
-	case "skiing":
-		fmt.Println("go to the mountains!")
-	case "swimming":
-		fmt.Println("go to the pool!")
-	case "surfing":
-		fmt.Println("go to hawaii!")
-	case "wingsuit flying":
-		fmt.Println("what would you like me to say at your funeral?")
-	default:
-		fmt.Println("Nothing")
+	x := 1.2
+
+	types := fmt.Sprintf("%T", x)
+	fmt.Println(types)
+	switch types {
+	case "string":
+		fmt.Println("stringui")
+	case "int":
+		fmt.Println("int")
+	case "float64":
+		fmt.Println("float")
 	}
 }
