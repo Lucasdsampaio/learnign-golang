@@ -14,5 +14,7 @@ func main() {
 		fmt.Println("int")
 	case "float64":
 		fmt.Println("float")
+	default:
+		fmt.Println("another thing")
 	}
 }
